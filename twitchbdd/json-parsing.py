@@ -16,7 +16,7 @@ def jsonparsing(loop, debug = 0):
     # open and load data in dictionary
     try:
         with open(file_path, 'r') as f:
-        data = json.load(f)
+            data = json.load(f)
 
     except FileNotFoundError:
         raise FileNotFoundError('unable to find the downloaded file')
