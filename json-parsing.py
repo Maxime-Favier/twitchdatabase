@@ -1,10 +1,9 @@
 # -*-coding:Latin-1 -*
 # !/usr/bin/python3
 
-"""get the name of all the viewers in the database"""
-
 
 def jsonparsing(loop, debug = 0):
+    """get the name of all the viewers in the database"""
 
     try:
         import json
@@ -38,3 +37,5 @@ def jsonparsing(loop, debug = 0):
 
     if debug == 1:
         print(viewers)
+
+    return viewers

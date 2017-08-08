@@ -1,10 +1,9 @@
 # -*-coding:Latin-1 -*
 # /usr/bin/python3
 
-"""module databas: check if the pseudo is in the bdd, add the user points"""
-
 
 def processdata(pseudo, debug = 0):
+    """function processdata: check if the pseudo is in the bdd, add the user points"""
 
     import time
 
