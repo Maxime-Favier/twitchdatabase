@@ -1,5 +1,5 @@
 # -*-coding:Latin-1 -*
-# !/usr/bin
+# /usr/bin/python3
 """module download: download the viewers file"""
 
 

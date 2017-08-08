@@ -1,5 +1,6 @@
-#!/usr/bin/env python
 # -*-coding:Latin-1 -*
+# /usr/bin/python3
+
 """module database: check if the pseudo is in the bdd, add the user points"""
 
 
