@@ -95,6 +95,7 @@ finally:
         if debug == 1:
             print("old user detected")
 
+        # get the old amount of point
         get_points = output_sql[0]
         list_sql = list(get_points)
         new_points = list_sql[2] + 10
@@ -106,6 +107,7 @@ finally:
         sql_input = (new_points, pseudo)
 
         try:
+            # change the amount of point
             cur.execute("UPDATE viewers SET point = ? WHERE name = ?", sql_input)
             conn.commit()
 
@@ -115,6 +117,7 @@ finally:
         sql_input = (last_see, pseudo)
 
         try:
+            # change
             cur.execute("UPDATE viewers SET lastsee = ? WHERE name = ?", sql_input)
             conn.commit()
         except:
