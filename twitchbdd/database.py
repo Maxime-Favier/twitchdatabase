@@ -5,14 +5,16 @@ import sqlite3
 import time
 import os
 
+first_run = 0
+
 try:
     config = open("config/first-run.conf", "r")
-
-except FileNotFoundError:
+except:
+    print("first run!")
     config = open("config/first-run.conf", "w")
     config.write("first-run = true")
     first_run = 1
-    
+
 finally:
 
     debug = 1
@@ -31,9 +33,10 @@ finally:
                     " id INTEGER NOT NULL PRIMARY KEY,"
                     " name TEXT, point INTEGER,"
                     " avert INTEGER,"
-                    " lastsee DATETIME)")
-        cur.execute("INSERT INTO viewers(id,name,point,avert,lastsee)"
-                    " VALUES(NULL,'maxime_le_goupil', 10, 0, '2000-01-01 0:0:0')")
+                    " lastsee DATETIME,"
+                    " firsttime DATETIME)")
+        cur.execute("INSERT INTO viewers(id,name,point,avert,lastsee,firsttime)"
+                    " VALUES(NULL,'maxime_le_goupil', 10, 0, '2000-01-01 0:0:0', '2000-01-01 0:0:0')")
         conn.commit()
 
         if debug == 1:
@@ -55,17 +58,37 @@ finally:
             print("preparing to add a new user in the database: ", pseudo)
 
         last_see = time.strftime("%Y-%m-%d %H:%M:%S")
-        sql_input = (pseudo, 10, 0, last_see)
+        sql_input = (pseudo, 10, 0, last_see, last_see)
 
-        cur.execute("INSERT INTO viewers (id,name, point, avert, lastsee)"
-                    " VALUES (NULL, ?, ?, ?, ?)", sql_input)
+        cur.execute("INSERT INTO viewers (id, name, point, avert, lastsee, firsttime)"
+                    " VALUES (NULL, ?, ?, ?, ?, ?)", sql_input)
         conn.commit()
 
         if debug == 1:
             print("successfully add a new user")
 
     else:
-        print("old user detected")
+
+        if debug == 1:
+            print("old user detected")
+
+        get_points = output_sql[0]
+        list_sql = list(get_points)
+        new_points = list_sql[2] + 10
+
+        if debug == 1:
+            print("new balance",new_points)
+
+        last_see = time.strftime("%Y-%m-%d %H:%M:%S")
+        sql_input = (new_points, pseudo)
+        cur.execute("UPDATE viewers SET point = ? WHERE name = ?", sql_input)
+        conn.commit()
+
+        sql_input = (last_see, pseudo)
+        cur.execute("UPDATE viewers SET lastsee = ? WHERE name = ?", sql_input)
+        conn.commit()
+
+
 
     cur.close()
     conn.close()
