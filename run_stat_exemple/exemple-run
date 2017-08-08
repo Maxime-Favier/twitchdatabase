@@ -1,0 +1,667 @@
+performance test exemple:
+    302 users in the database / live
+    20 sec of sleep between 2 loop
+
+<method 'commit' of 'sqlite3.Connection' objects>	2412	106681	106681
+<built-in method time.sleep>	3	59446	59446
+<built-in method builtins.input>	1	16816	16816
+<method 'read' of '_ssl._SSLSocket' objects>	6	9348	9348
+<method 'execute' of 'sqlite3.Cursor' objects>	2413	1363	1363
+<method 'do_handshake' of '_ssl._SSLSocket' objects>	3	1285	1285
+<method 'connect' of '_socket.socket' objects>	3	655	655
+<built-in method _socket.getaddrinfo>	3	274	268
+<built-in method _sqlite3.connect>	906	219	219
+processdata	906	108818	131
+<method 'close' of 'sqlite3.Connection' objects>	906	129	129
+<module>	1	196885	115
+<built-in method io.open>	914	127	108
+<built-in method builtins.print>	2734	104	104
+<built-in method time.strftime>	906	33	33
+<built-in method _imp.create_dynamic>	1	18	18
+<built-in method marshal.loads>	32	14	14
+_optimize_charset	39	8	7
+<built-in method builtins.__build_class__>	138	26	7
+find_spec	83	17	6
+<built-in method _locale.nl_langinfo>	909	6	6
+<method 'cursor' of 'sqlite3.Connection' objects>	906	5	5
+getpreferredencoding	909	11	5
+__init__	908	7	4
+_parse	64	11	3
+_compile	99	10	2
+__init__	909	2	2
+__next	1341	2	2
+_path_join	447	5	2
+__new__	1	4	2
+<built-in method posix.stat>	164	2	2
+<listcomp>	447	2	2
+<method 'close' of 'sqlite3.Cursor' objects>	906	1	1
+add_handler	10	2	1
+_load_unlocked	37	122	1
+<built-in method builtins.hasattr>	531	1	1
+<method 'read' of '_io.FileIO' objects>	32	1	1
+<built-in method __new__ of type object at 0x84d9dc0>	89	1	1
+getwidth	151	1	1
+<method 'format' of 'str' objects>	405	1	1
+_find_spec	37	21	1
+get	1122	3	1
+get_code	32	21	1
+get_data	32	2	1
+__new__	3	0	0
+Codec	1	0	0
+header_source_parse	24	0	0
+ftpwrapper	1	0	0
+_path_is_mode_type	49	1	0
+__enter__	5	0	0
+_noop	6	0	0
+_dnsname_match	3	0	0
+__new__	9	0	0
+decode	1	0	0
+__init__	23	0	0
+_find_and_load	37	125	0
+addinfourl	1	0	0
+setfirstweekday	1	0	0
+__setitem__	61	1	0
+<module>	1	59	0
+__init__	1	7	0
+open	3	11569	0
+MultipartInvariantViolationDefect	1	0	0
+DefragResult	1	0	0
+seek	1	0	0
+has_header	6	0	0
+<module>	1	0	0
+__contains__	5	0	0
+_escape	23	0	0
+_call_with_frames_removed	48	120	0
+write	3	0	0
+addclosehook	1	0	0
+Quoter	1	0	0
+_check_tzinfo_arg	5	0	0
+<method 'title' of 'str' objects>	9	0	0
+__len__	129	0	0
+__new__	57	0	0
+<built-in method fromkeys>	3	0	0
+close	3	0	0
+__next__	33	0	0
+__subclasshook__	5	0	0
+_localized_day	1	0	0
+<module>	1	64	0
+checklookbehindgroup	1	0	0
+_get_spec	33	0	0
+__init__	3	0	0
+<method 'tobytes' of 'memoryview' objects>	3	0	0
+<built-in method builtins.chr>	164	0	0
+_commit_removals	5	0	0
+urlparse	3	0	0
+_call_chain	6	11566	0
+<function socket.detach at 0xb70d165c>	3	0	0
+<method 'update' of 'dict' objects>	4	0	0
+makefile	3	0	0
+<method 'fileno' of '_socket.socket' objects>	3	0	0
+feed	3	1	0
+_path_isfile	45	1	0
+<listcomp>	1	0	0
+_r_long	64	0	0
+_days_before_year	3	0	0
+__init__	6	0	0
+decode	3	0	0
+<built-in method _imp.exec_builtin>	4	0	0
+LocaleTextCalendar	1	0	0
+wrap_socket	3	1288	0
+__exit__	103	0	0
+__init__	3	0	0
+Error	1	0	0
+LocaleHTMLCalendar	1	0	0
+checkgroup	1	0	0
+HeaderDefect	1	0	0
+<method 'endswith' of 'str' objects>	37	0	0
+full_url	3	2	0
+register_adapters_and_converters	1	0	0
+_requires_builtin_wrapper	4	0	0
+<built-in method builtins.__import__>	8	74	0
+encode	123	0	0
+pushlines	6	0	0
+<module>	1	1	0
+close	6	0	0
+<method 'read' of '_io.TextIOWrapper' objects>	4	0	0
+InvalidMultipartContentTransferEncodingDefect	1	0	0
+__init__	1	0	0
+UndecodableBytesDefect	1	0	0
+addinfo	1	0	0
+NonASCIILocalPartDefect	1	0	0
+<method 'isalnum' of 'str' objects>	14	0	0
+Template	1	0	0
+_coerce_args	6	0	0
+<built-in method _sre.compile>	23	0	0
+addbase	1	0	0
+<method 'remove' of 'set' objects>	5	0	0
+connect	3	932	0
+<method 'split' of 'str' objects>	56	0	0
+<method 'gettimeout' of '_socket.socket' objects>	9	0	0
+IncrementalDecoder	1	0	0
+CloseBoundaryNotFoundDefect	1	0	0
+<built-in method _sqlite3.register_adapter>	2	0	0
+<genexpr>	16	0	0
+append	145	0	0
+splittype	3	1	0
+<built-in method builtins.divmod>	45	0	0
+HTTPResponse	1	0	0
+<method 'readinto' of '_io.BufferedReader' objects>	3	10	0
+close	3	0	0
+getuntil	12	0	0
+__init__	1	0	0
+FancyURLopener	1	0	0
+compile	26	28	0
+<genexpr>	32	0	0
+_get_hostport	3	0	0
+request_host	3	0	0
+<built-in method builtins.globals>	1	0	0
+parent	37	0	0
+HTTPErrorProcessor	1	0	0
+detach	3	0	0
+<module>	1	21	0
+spec_from_file_location	33	0	0
+ParseResult	1	0	0
+<method 'fullmatch' of '_sre.SRE_Pattern' objects>	12	0	0
+acquire	37	0	0
+<listcomp>	1	0	0
+<method 'rsplit' of 'str' objects>	6	0	0
+AddrlistClass	1	0	0
+<method 'add' of 'set' objects>	24	0	0
+_decref_socketios	3	0	0
+NonPrintableDefect	1	0	0
+__new__	3	1	0
+tell	142	0	0
+HTTPSHandler	1	0	0
+<module>	1	8	0
+<built-in method sys.exit>	1	0	0
+_path_importer_cache	95	0	0
+release	37	0	0
+endheaders	3	2220	0
+__enter__	37	2	0
+__new__	2	0	0
+_parsegen	6	1	0
+<module>	1	0	0
+ParseResult	1	0	0
+_ResultMixinStr	1	0	0
+<method 'sub' of '_sre.SRE_Pattern' objects>	3	0	0
+_compile_bytecode	32	14	0
+<built-in method builtins.round>	9	0	0
+_check_date_fields	5	0	0
+__init__	14	0	0
+getaddrinfo	3	276	0
+set_payload	3	0	0
+__setitem__	29	0	0
+<method 'extend' of 'collections.deque' objects>	6	0	0
+CharsetError	1	0	0
+<method 'get' of 'dict' objects>	134	0	0
+_find_new_	1	0	0
+__init__	1	3	0
+_path_hooks	4	0	0
+HTTPCookieProcessor	1	0	0
+_set_content_length	3	0	0
+_ip_int_from_string	3	0	0
+__init__	2	0	0
+<method 'capitalize' of 'str' objects>	9	0	0
+<module>	1	1	0
+__init__	3	0	0
+__new__	55	0	0
+<method 'read' of '_io.StringIO' objects>	6	0	0
+fix_flags	23	0	0
+AbstractDigestAuthHandler	1	0	0
+<built-in method builtins.isinstance>	972	0	0
+splittag	3	0	0
+_splitnetloc	1	0	0
+<module>	1	92	0
+find_spec	33	19	0
+parse_headers	3	2	0
+HTTPPasswordMgr	1	0	0
+__prepare__	1	0	0
+<module>	1	12	0
+__new__	3	0	0
+_handle_fromlist	63	55	0
+FeedParser	1	0	0
+register	1	0	0
+__init__	37	0	0
+<built-in method _codecs.latin_1_decode>	1	0	0
+<built-in method builtins.any>	39	0	0
+<method 'values' of 'mappingproxy' objects>	1	0	0
+create_module	4	0	0
+HTTPConnection	1	0	0
+<method 'popleft' of 'collections.deque' objects>	27	0	0
+__init__	32	0	0
+<method 'groups' of '_sre.SRE_Match' objects>	6	0	0
+__init__	6	0	0
+__iter__	124	2	0
+DefragResultBytes	1	0	0
+<method 'items' of 'mappingproxy' objects>	1	0	0
+_call_parse	6	1	0
+_validate_bytecode_header	32	1	0
+_is_dunder	61	0	0
+MultipartConversionError	1	0	0
+<built-in method builtins.repr>	3	0	0
+BytesHeaderParser	1	0	0
+<module>	1	0	0
+cached	65	1	0
+<module>	1	0	0
+<method 'rpartition' of 'str' objects>	305	0	0
+<method 'join' of 'str' objects>	556	0	0
+exec_module	1	0	0
+_simple	29	0	0
+find_spec	33	0	0
+HeaderParseError	1	0	0
+<method 'partition' of 'str' objects>	12	0	0
+read	6	9348	0
+request	3	2221	0
+do_open	3	11566	0
+Parser	1	0	0
+<listcomp>	1	0	0
+__neg__	1	0	0
+_read_status	3	9338	0
+UnknownTransferEncoding	1	0	0
+_real_close	3	0	0
+<built-in method _thread.allocate_lock>	74	0	0
+<method 'setsockopt' of '_socket.socket' objects>	3	0	0
+has_proxy	3	0	0
+<method 'tolist' of 'memoryview' objects>	6	0	0
+cache_from_source	64	2	0
+do_request_	3	0	0
+get_filename	32	0	0
+encode	6	0	0
+CannotSendHeader	1	0	0
+__init__	3	0	0
+_path_isdir	4	0	0
+path_stats	32	0	0
+BadStatusLine	1	0	0
+Policy	1	0	0
+__exit__	37	0	0
+<method 'lstrip' of 'str' objects>	24	0	0
+Charset	1	0	0
+server_hostname	6	0	0
+_send_output	3	2220	0
+_generate_overlap_table	4	0	0
+EmailMessage	1	0	0
+_open	3	11566	0
+exec_module	4	0	0
+__contains__	1	0	0
+<module>	1	0	0
+<listcomp>	12	0	0
+<method '__contains__' of 'frozenset' objects>	16	0	0
+_ValueFormatter	1	0	0
+<method 'setdefault' of 'dict' objects>	15	0	0
+<module>	1	0	0
+match	286	0	0
+_fill_cache	4	0	0
+send	3	2220	0
+_pop_message	3	0	0
+create_module	1	18	0
+StreamReader	1	0	0
+set_debuglevel	3	0	0
+putheader	12	0	0
+_intenum_converter	54	1	0
+<method 'insert' of 'list' objects>	1	0	0
+__getitem__	123	1	0
+__init__	4	0	0
+<method 'close' of '_io.BufferedReader' objects>	3	0	0
+<method 'getsockopt' of '_socket.socket' objects>	3	0	0
+_ip_int_from_string	3	0	0
+data	3	0	0
+create_connection	3	932	0
+__init__	37	0	0
+<built-in method _sre.getlower>	214	0	0
+__iter__	6	0	0
+MessageError	1	0	0
+readline	33	0	0
+<method 'peer_certificate' of '_ssl._SSLSocket' objects>	3	0	0
+urlopen	3	11574	0
+<method 'rfind' of 'str' objects>	6	0	0
+<method 'seek' of '_io.StringIO' objects>	12	0	0
+add	6	0	0
+ip_address	3	0	0
+<method 'split' of 'bytes' objects>	6	0	0
+__init__	3	0	0
+HTTPMessage	1	0	0
+<method 'decode' of 'bytes' objects>	251	0	0
+BoundaryError	1	0	0
+AddressList	1	0	0
+isstring	46	0	0
+HTTPBasicAuthHandler	1	0	0
+AbstractBasicAuthHandler	1	2	0
+LineTooLong	1	0	0
+<built-in method builtins.setattr>	78	0	0
+<method 'readline' of '_io.BufferedReader' objects>	31	9338	0
+is_package	4	0	0
+_fix_result_transcoding	1	0	0
+<method '__subclasses__' of 'type' objects>	5	0	0
+StartBoundaryNotFoundDefect	1	0	0
+__init__	3	0	0
+__getitem__	318	1	0
+_check_close	3	0	0
+date	1	0	0
+readable	9	0	0
+<module>	1	3	0
+<genexpr>	148	0	0
+<method 'deleter' of 'property' objects>	2	0	0
+<method 'lower' of 'str' objects>	264	0	0
+__init__	3	0	0
+<method 'find' of 'bytearray' objects>	177	0	0
+<genexpr>	10	0	0
+UnimplementedFileMode	1	0	0
+namedtuple	3	4	0
+__iter__	14	0	0
+<setcomp>	1	0	0
+FTPHandler	1	0	0
+copyfileobj	3	12	0
+path_hook_for_FileFinder	4	0	0
+jsonparsing	3	1	0
+IllegalMonthError	1	0	0
+<built-in method _imp.exec_dynamic>	1	0	0
+Message	1	0	0
+HTTPSConnection	1	0	0
+HTTPStatus	1	2	0
+Header	1	0	0
+<module>	1	0	0
+<built-in method _imp._fix_co_filename>	32	0	0
+<method 'replace' of 'str' objects>	8	0	0
+InvalidBase64CharactersDefect	1	0	0
+load	3	0	0
+_append_doc	6	0	0
+escape	7	0	0
+<module>	1	10	0
+NotConnected	1	0	0
+download	3	11685	0
+ImproperConnectionState	1	0	0
+<method 'items' of 'collections.OrderedDict' objects>	57	0	0
+<module>	1	0	0
+get	27	0	0
+_new_message	3	0	0
+_parse_headers	3	0	0
+getproxies_environment	1	3	0
+flush	3	0	0
+_get_module_lock	37	1	0
+<genexpr>	12	0	0
+type	3	0	0
+_verbose_message	429	0	0
+<dictcomp>	1	0	0
+HeaderMissingRequiredValue	1	0	0
+<module>	1	20	0
+UnknownHandler	1	0	0
+HTTPDigestAuthHandler	1	0	0
+__init__	3	0	0
+unwrap	3	0	0
+<method '_checkReadable' of '_io._IOBase' objects>	6	0	0
+SplitResult	1	0	0
+<module>	1	0	0
+IncrementalEncoder	1	0	0
+<built-in method _codecs.utf_8_decode>	4	0	0
+<genexpr>	2	0	0
+__setattr__	63	0	0
+compile	23	27	0
+<method 'rstrip' of 'str' objects>	982	0	0
+groups	98	0	0
+<listcomp>	1	0	0
+<built-in method _signal.signal>	1	0	0
+parsestr	3	2	0
+__init__	2	0	0
+__init__	3	0	0
+tzinfo	1	0	0
+_is_descriptor	57	0	0
+<module>	1	58	0
+http_response	3	0	0
+<module>	1	5	0
+_find_and_load_unlocked	37	125	0
+_path_stat	164	3	0
+_localized_month	1	0	0
+<built-in method builtins.ord>	147	0	0
+<module>	1	6	0
+begin	3	9342	0
+<built-in method builtins.abs>	72	0	0
+<method 'get' of 'mappingproxy' objects>	63	0	0
+header_fetch_parse	21	0	0
+<method 'startswith' of 'str' objects>	377	0	0
+InvalidHeaderDefect	1	0	0
+set_raw	24	0	0
+__init__	2	0	0
+OpenerDirector	1	0	0
+__init__	3	1	0
+readinto	3	11	0
+_parse	3	2	0
+MessageParseError	1	0	0
+info	3	0	0
+HTTPPasswordMgrWithDefaultRealm	1	0	0
+_Accumulator	1	0	0
+_enum_to_int	2	0	0
+__init__	1	0	0
+get_content_maintype	9	0	0
+<module>	1	2	0
+<method 'set_default_verify_paths' of '_ssl._SSLContext' objects>	3	0	0
+<module>	1	3	0
+different_locale	1	0	0
+<module>	1	37	0
+decode	3	0	0
+<genexpr>	3	0	0
+timedelta	1	0	0
+_get_mixins_	1	0	0
+Request	1	0	0
+<dictcomp>	1	0	0
+<built-in method posix.listdir>	4	0	0
+getregentry	1	0	0
+FirstHeaderLineIsContinuationDefect	1	0	0
+ResponseNotReady	1	0	0
+<method 'pop' of 'list' objects>	3	0	0
+ProxyHandler	1	0	0
+__new__	2	0	0
+<built-in method _sqlite3.register_converter>	2	0	0
+<method 'write' of '_ssl._SSLSocket' objects>	3	0	0
+URLError	1	0	0
+TextCalendar	1	0	0
+<built-in method _imp.create_builtin>	4	0	0
+_create	3	0	0
+MessageDefect	1	0	0
+_check_name_wrapper	32	0	0
+<built-in method _bisect.insort>	9	0	0
+<module>	1	51	0
+__exit__	37	0	0
+__init__	1	0	0
+_bytes_to_codes	6	0	0
+readinto	6	9349	0
+fixup	178	0	0
+HTTPDefaultErrorHandler	1	0	0
+<method 'upper' of 'str' objects>	3	0	0
+_verbose_message	37	0	0
+BufferedSubFile	1	0	0
+CannotSendRequest	1	0	0
+<built-in method _thread.get_ident>	74	0	0
+ParseResultBytes	1	0	0
+__init__	99	0	0
+__new__	3	0	0
+do_handshake	3	1287	0
+MIMEPart	1	0	0
+_is_sunder	61	0	0
+_get_cached	33	1	0
+__init__	1	0	0
+_extend_docstrings	1	0	0
+InvalidURL	1	0	0
+UnknownProtocol	1	0	0
+data	9	0	0
+read	6	9348	0
+__enter__	103	0	0
+__init__	1	0	0
+__exit__	5	0	0
+datetime	1	0	0
+DefragResult	1	0	0
+close	3	0	0
+_splitparam	12	0	0
+<built-in method _imp.is_builtin>	16	0	0
+_get_spec	33	19	0
+_mk_bitmap	12	0	0
+<method 'encode' of 'str' objects>	183	0	0
+close	3	0	0
+signal	1	0	0
+AbstractHTTPHandler	1	0	0
+_QByteMap	1	0	0
+InvalidBase64PaddingDefect	1	0	0
+putrequest	3	0	0
+<module>	1	0	0
+_compile	26	28	0
+HTTPException	1	0	0
+HTTPPasswordMgrWithPriorAuth	1	0	0
+IllegalWeekdayError	1	0	0
+__init__	2	0	0
+<built-in method sys._getframe>	3	0	0
+__init__	2	0	0
+_TemplateMetaclass	1	0	0
+_checkClosed	18	0	0
+_output	15	0	0
+_parse_sub	52	12	0
+push	3	0	0
+<method 'items' of 'dict' objects>	40	0	0
+SplitResult	1	0	0
+<built-in method builtins.dir>	10	0	0
+<method 'set_ciphers' of '_ssl._SSLContext' objects>	3	0	0
+unquote	3	0	0
+<method 'extend' of 'list' objects>	44	0	0
+_real_close	3	0	0
+__members__	2	0	0
+search_function	2	6	0
+<built-in method builtins.min>	236	0	0
+<method 'match' of '_sre.SRE_Pattern' objects>	46	0	0
+<module>	1	1	0
+HTTPHandler	1	0	0
+HTTPError	1	0	0
+_check_time_fields	5	0	0
+<function HTTPResponse.close at 0xb61f9d64>	3	0	0
+urlsplit	3	0	0
+<method 'append' of 'list' objects>	1636	0	0
+parse	3	2	0
+decode	244	0	0
+getresponse	3	9342	0
+add_unredirected_header	6	0	0
+HTTPRedirectHandler	1	0	0
+normalize_encoding	2	0	0
+__init__	37	0	0
+splithost	3	0	0
+<genexpr>	16	0	0
+_new_module	32	0	0
+https_open	3	11566	0
+<module>	1	0	0
+<method 'find' of 'str' objects>	344	0	0
+<method 'getpeername' of '_socket.socket' objects>	3	0	0
+CacheFTPHandler	1	0	0
+<method '_checkClosed' of '_io._IOBase' objects>	6	0	0
+<built-in method builtins.getattr>	328	0	0
+<method '_wrap_socket' of '_ssl._SSLContext' objects>	3	0	0
+do_handshake	3	1287	0
+__init__	23	0	0
+<setcomp>	3	0	0
+<method 'isidentifier' of 'str' objects>	28	0	0
+_init_module_attrs	37	3	0
+_NetlocResultMixinBase	1	0	0
+<method 'write' of '_io.TextIOWrapper' objects>	1	0	0
+__init__	1	0	0
+__new__	2	0	0
+_class_escape	22	0	0
+_PolicyBase	1	0	0
+IncompleteRead	1	0	0
+_relax_case	83	0	0
+HeaderParser	1	0	0
+cb	37	0	0
+_path_split	64	0	0
+spec_from_loader	4	0	0
+<module>	1	0	0
+<built-in method from_bytes>	64	0	0
+items	2	0	0
+has_location	37	0	0
+<function HTTPResponse.flush at 0xb61f9dac>	3	0	0
+_compile_charset	39	8	0
+__init__	5	0	0
+<built-in method builtins.issubclass>	22	0	0
+_NetlocResultMixinStr	1	0	0
+raw_decode	3	0	0
+FileHandler	1	0	0
+abstractmethod	5	0	0
+loads	3	0	0
+load_default_certs	3	0	0
+connect	3	2220	0
+__subclasscheck__	5	0	0
+close	3	0	0
+DataHandler	1	0	0
+ProxyBasicAuthHandler	1	0	0
+get_full_url	3	0	0
+build_opener	1	5	0
+_compile_info	23	3	0
+_code	23	13	0
+add_parent	9	0	0
+_check_int_field	35	0	0
+<listcomp>	1	0	0
+RemoteDisconnected	1	0	0
+_check_connected	3	0	0
+StreamWriter	1	0	0
+MisplacedEnvelopeHeaderDefect	1	0	0
+sendall	3	0	0
+decode	4	0	0
+_NetlocResultMixinBytes	1	0	0
+<built-in method builtins.len>	1238	0	0
+SplitResultBytes	1	0	0
+<method 'settimeout' of '_socket.socket' objects>	6	0	0
+ContentTooShortError	1	0	0
+__init__	37	0	0
+__iter__	124	0	0
+recv_into	6	9348	0
+_send_request	3	2221	0
+match_hostname	3	1	0
+Calendar	1	0	0
+create_module	32	0	0
+<method 'setter' of 'property' objects>	3	0	0
+<built-in method builtins.max>	18	0	0
+timezone	1	0	0
+<method 'write' of '_io.BufferedWriter' objects>	3	0	0
+_close_conn	3	0	0
+<method 'translate' of 'bytearray' objects>	12	0	0
+<method 'count' of 'str' objects>	15	0	0
+_int_to_enum	1	0	0
+BytesFeedParser	1	0	0
+module_from_spec	37	22	0
+stop	1	0	0
+<method 'truncate' of '_io.StringIO' objects>	6	0	0
+<built-in method _imp.acquire_lock>	103	0	0
+<built-in method _imp.release_lock>	140	0	0
+<method 'end' of '_sre.SRE_Match' objects>	6	0	0
+<method 'toordinal' of 'datetime.date' objects>	1	0	0
+MissingHeaderBodySeparatorDefect	1	0	0
+family	3	0	0
+__init__	3	1288	0
+<module>	1	5	0
+ProxyDigestAuthHandler	1	0	0
+__init__	3	2	0
+context	3	0	0
+_ResultMixinBytes	1	0	0
+<module>	1	6	0
+URLopener	1	0	0
+_has_surrogates	21	0	0
+ObsoleteHeaderDefect	1	0	0
+_days_in_month	5	0	0
+<method 'join' of 'bytes' objects>	18	0	0
+_sanitize_header	21	0	0
+exec_module	32	122	0
+parse	23	12	0
+Formatter	1	0	0
+<built-in method _imp.is_frozen>	33	0	0
+read	6	11	0
+<method 'write' of '_io.StringIO' objects>	3	0	0
+<method 'strip' of 'str' objects>	18	0	0
+__lt__	16	0	0
+get_content_type	12	0	0
+__enter__	37	0	0
+NoBoundaryInMultipartDefect	1	0	0
+BaseHandler	1	0	0
+Compat32	1	0	0
+<genexpr>	3	0	0
+__call__	55	1	0
+<method 'mro' of 'type' objects>	6	0	0
+getregentry	1	0	0
+get_method	3	0	0
+time	1	0	0
+full_url	9	0	0
+BytesParser	1	0	0
+getwhile	6	0	0
+getpeercert	3	0	0
