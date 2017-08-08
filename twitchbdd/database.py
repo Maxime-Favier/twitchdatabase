@@ -91,7 +91,7 @@ finally:
             print("successfully add a new user")
 
     else:
-
+        # change the number of point and the lastsee date
         if debug == 1:
             print("old user detected")
 
