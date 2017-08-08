@@ -9,13 +9,13 @@ def download(pseudo, loop, debug=0):
     # import lib
     try:
         import shutil   # lib : write file
-    except:
-        raise ModuleNotFoundError("unable to load lib: shutil")
+    except ImportError:
+        raise ImportError("unable to load lib: shutil")
 
     try:
         import urllib.request  # lib : download the file
-    except:
-        raise ModuleNotFoundError("unable to load lib: urllib")
+    except ImportError:
+        raise ImportError("unable to load lib: urllib")
 
     # pseudo check
     if pseudo == "":

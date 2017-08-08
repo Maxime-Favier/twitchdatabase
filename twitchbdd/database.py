@@ -1,13 +1,21 @@
 #!/usr/bin/env python
 # -*-coding:Latin-1 -*
 """module database: check if the pseudo is in the bdd, add the user points"""
-import sqlite3
-import time
-
-first_run = 0
 
 try:
+    import sqlite3      # sql package
+    import time
+except ImportError:
+    raise ImportError("unable to find lib: sqlite3 and/or time")
+
+first_run = 0
+debug = 1
+pseudo = 'emeric75'
+
+# check if that is the first run
+try:
     config = open("config/first-run.conf", "r")
+
 except FileNotFoundError:
     print("first run!")
     config = open("config/first-run.conf", "w")
@@ -16,34 +24,46 @@ except FileNotFoundError:
 
 finally:
 
-    debug = 1
-    pseudo = 'emeric75'
-
+    # connect to the database
     database_path = "database/viewers.sq3"
     conn = sqlite3.connect(database_path)
     cur = conn.cursor()
 
     if first_run == 1:
+        # create database
 
         if debug == 1:
             print("creating database")
 
-        cur.execute("CREATE TABLE viewers ("
+        try:
+            # create sql table
+            cur.execute("CREATE TABLE viewers ("
                     " id INTEGER NOT NULL PRIMARY KEY,"
                     " name TEXT, point INTEGER,"
                     " avert INTEGER,"
                     " lastsee DATETIME,"
                     " firsttime DATETIME)")
-        cur.execute("INSERT INTO viewers(id,name,point,avert,lastsee,firsttime)"
+            # just a test sample
+            cur.execute("INSERT INTO viewers(id,name,point,avert,lastsee,firsttime)"
                     " VALUES(NULL,'maxime_le_goupil', 10, 0, '2000-01-01 0:0:0', '2000-01-01 0:0:0')")
-        conn.commit()
+            # execute sql request
+            conn.commit()
+
+        except:
+            raise Exception("sql creation error")
 
         if debug == 1:
             print("database created")
 
     sql_input = pseudo,
-    cur.execute("SELECT * FROM viewers WHERE name LIKE ?", sql_input)
-    conn.commit()
+
+    try:
+        # find the viewer in the database
+        cur.execute("SELECT * FROM viewers WHERE name LIKE ?", sql_input)
+        conn.commit()
+
+    except:
+        raise Exception('sql find error')
 
     output_sql = list(cur)
 
@@ -59,9 +79,13 @@ finally:
         last_see = time.strftime("%Y-%m-%d %H:%M:%S")
         sql_input = (pseudo, 10, 0, last_see, last_see)
 
-        cur.execute("INSERT INTO viewers (id, name, point, avert, lastsee, firsttime)"
+        try:
+            cur.execute("INSERT INTO viewers (id, name, point, avert, lastsee, firsttime)"
                     " VALUES (NULL, ?, ?, ?, ?, ?)", sql_input)
-        conn.commit()
+            conn.commit()
+
+        except:
+            raise Exception('sql create user error')
 
         if debug == 1:
             print("successfully add a new user")
@@ -76,18 +100,25 @@ finally:
         new_points = list_sql[2] + 10
 
         if debug == 1:
-            print("new balance",new_points)
+            print("new balance", new_points)
 
         last_see = time.strftime("%Y-%m-%d %H:%M:%S")
         sql_input = (new_points, pseudo)
-        cur.execute("UPDATE viewers SET point = ? WHERE name = ?", sql_input)
-        conn.commit()
+
+        try:
+            cur.execute("UPDATE viewers SET point = ? WHERE name = ?", sql_input)
+            conn.commit()
+
+        except:
+            raise Exception('sql set points error')
 
         sql_input = (last_see, pseudo)
-        cur.execute("UPDATE viewers SET lastsee = ? WHERE name = ?", sql_input)
-        conn.commit()
 
-
+        try:
+            cur.execute("UPDATE viewers SET lastsee = ? WHERE name = ?", sql_input)
+            conn.commit()
+        except:
+            raise Exception('sql set lastsee error')
 
     cur.close()
     conn.close()

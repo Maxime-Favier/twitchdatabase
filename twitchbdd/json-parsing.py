@@ -16,4 +16,4 @@ viewers.extend(admins)
 viewers.extend(moderators)
 
 if debug == 1:
-
+    print(viewers)
