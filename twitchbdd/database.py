@@ -18,18 +18,18 @@ def processdata(pseudo, debug = 0):
 
     # check if that is the first run
     try:
-        config = open("../config/first-run.conf", "r")
+        config = open("config/first-run.conf", "r")
 
     except FileNotFoundError:
         print("first run!")
-        config = open("../config/first-run.conf", "w")
+        config = open("config/first-run.conf", "w")
         config.write("first-run = true")
         first_run = 1
 
     finally:
 
         # connect to the database
-        database_path = "../database/viewers.sq3"
+        database_path = "database/viewers.sq3"
         conn = sqlite3.connect(database_path)
         cur = conn.cursor()
 

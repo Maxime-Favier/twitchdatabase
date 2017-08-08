@@ -23,7 +23,7 @@ def download(pseudo, loop, debug=0):
 
     # URL and file name define
     url = "https://tmi.twitch.tv/group/user/{0}/chatters".format(pseudo)
-    file_name = "../download/file{0}.json".format(loop)
+    file_name = "download/file{0}.json".format(loop)
 
     # debug : print
     if debug == 1:

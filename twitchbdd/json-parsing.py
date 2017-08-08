@@ -12,7 +12,7 @@ def jsonparsing(loop, debug = 0):
     except ImportError:
         raise ImportError('unable to find json package')
 
-    file_path = '../download/file{0}.json'.format(loop)
+    file_path = 'download/file{0}.json'.format(loop)
 
     # open and load data in dictionary
     try:
