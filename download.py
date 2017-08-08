@@ -36,6 +36,3 @@ def download(pseudo, loop, debug=0):
             shutil.copyfileobj(response, out_file)
     except:
         raise ConnectionError("network or file path exception")
-
-
-download("playoverwatch", 1)
