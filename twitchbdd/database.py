@@ -3,13 +3,12 @@
 """module database: check if the pseudo is in the bdd, add the user points"""
 import sqlite3
 import time
-import os
 
 first_run = 0
 
 try:
     config = open("config/first-run.conf", "r")
-except:
+except FileNotFoundError:
     print("first run!")
     config = open("config/first-run.conf", "w")
     config.write("first-run = true")
