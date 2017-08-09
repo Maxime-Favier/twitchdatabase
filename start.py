@@ -237,12 +237,12 @@ print("By maxime_le_Goupil")
 channel_name = input("please type your channel name")
 channel_name = channel_name.lower()
 
-loop = 1
+loop = 0
 stop = 0
 
 while True:
 
-    loop = loop +1
+    loop = loop + 1
     download(channel_name, loop, 1)
     viewer_list = jsonparsing(loop, 1)
 
