@@ -28,7 +28,7 @@ class Interface(Frame):
         print(self.var)
         self.tutorial["text"] = "Vous avez cliqué {} fois.".format(self.name)
 
-window = Tk()
+twitchdatabase = Tk()
 interface = Interface(window)
 interface.mainloop()
 interface.destroy()
