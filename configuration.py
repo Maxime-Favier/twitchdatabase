@@ -24,8 +24,6 @@ class Interface(Frame):
 
     def getname(self):
 
-        print(self.name)
-        print('here')
         self.var = self.name.get()
         print(self.var)
         self.tutorial["text"] = "Vous avez cliqué {} fois.".format(self.name)
