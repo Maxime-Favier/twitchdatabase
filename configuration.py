@@ -17,8 +17,8 @@ class Interface(Frame):
         self.ok = Button(self, text="Ok", command=self.getname)
 
         # widget display
-        self.tutorial.pack()
-        self.name.pack()
+        self.tutorial.pack(side="top")
+        self.name.pack(side="top")
         self.quit.pack(side="left")
         self.ok.pack(side="right")
 
@@ -26,9 +26,8 @@ class Interface(Frame):
 
         self.var = self.name.get()
         print(self.var)
-        self.tutorial["text"] = "Vous avez cliqué {} fois.".format(self.name)
 
 twitchdatabase = Tk()
-interface = Interface(window)
+interface = Interface(twitchdatabase)
 interface.mainloop()
 interface.destroy()
