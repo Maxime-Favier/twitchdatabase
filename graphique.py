@@ -10,6 +10,7 @@ def getname():
 
 
 window = Tk()
+# window title
 window.wm_title("Twitch database")
 pseudo = ""
 name = StringVar()
