@@ -1,7 +1,7 @@
 from tkinter import *
 import Img
 
-
+# get name function
 def getname():
     global pseudo
     pseudo = name.get()
