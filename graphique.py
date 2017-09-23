@@ -1,4 +1,7 @@
 from tkinter import *
+from dev import database
+from dev import download
+from dev import
 import PIL
 
 
@@ -13,6 +16,8 @@ def getname():
 window = Tk()
 # window title
 window.wm_title("Twitch database")
+
+# variables
 pseudo = ""
 name = StringVar()
 
@@ -23,7 +28,7 @@ tutorial = Label(window, text="twitch username:", font=("Helvetica", 11))
 name = Entry(window, textvariable=name, width=20)
 line_break_2 = Label(window, text=" ", font=("Helvetica", 11))
 stop = Button(text="quit", command=quit, font=("Helvetica", 11))
-ok = Button(text="Ok", command=getname, font=("Helvetica", 11))
+ok = Button(text="OK", command=getname, font=("Helvetica", 11))
 line_break_3 = Label(window, text=" ", font=("Helvetica", 5))
 
 twitch_database.grid(row=1, columnspan=5)
@@ -38,5 +43,7 @@ line_break_3.grid(row=6)
 
 window.mainloop()
 print(pseudo)
+
+
 
 
