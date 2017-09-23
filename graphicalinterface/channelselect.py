@@ -2,6 +2,7 @@ from tkinter import *
 
 def channelselect(debug=0):
 
+    pseudo = "lol"
 
     # get name function
     def getname():
@@ -39,7 +40,9 @@ def channelselect(debug=0):
 
     window.mainloop()
 
-    if debug==1:
+    def getpseudo():
+        print("here")
         print(pseudo)
-
     return pseudo
+
+channelselect(1)

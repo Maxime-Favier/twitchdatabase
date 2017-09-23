@@ -18,7 +18,8 @@ except FileNotFoundError:
 
 finally:
     # Get the new user channel name
-    pseudo = channelselect(debug)
+    pseudo = channelselect(1)
+    print("done")
     print(pseudo)
 
 
