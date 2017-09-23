@@ -1,9 +1,4 @@
 from tkinter import *
-from dev import database
-from dev import download
-from dev import jsonparsing
-
-import PIL
 
 def channelselection(debug=0):
 
@@ -18,7 +13,7 @@ def channelselection(debug=0):
 
     # check if that is the first run
     try:
-        config = open("../config/first-run-graph.conf", "r")
+        config = open("config/first-run-graph.conf", "r")
 
     except FileNotFoundError:
 
@@ -65,3 +60,5 @@ def channelselection(debug=0):
             print(pseudo)
 
         return pseudo
+
+channelselection(debug=1)
