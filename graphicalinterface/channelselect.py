@@ -28,7 +28,7 @@ def channelselect(debug=0):
     ok = Button(text="OK", command=getname, font=("Helvetica", 11))
     line_break_3 = Label(window, text=" ", font=("Helvetica", 5))
 
-     # window configuration
+    # window configuration
     twitch_database.grid(row=1, columnspan=5)
     line_break_1.grid(row=2)
     tutorial.grid(row=3, column=1, sticky=W)
@@ -39,7 +39,8 @@ def channelselect(debug=0):
     line_break_3.grid(row=6)
 
     window.mainloop()
-
+    print(pseudo)
     return pseudo
 
-channelselect(1)
+lol = channelselect(1)
+print(lol)
