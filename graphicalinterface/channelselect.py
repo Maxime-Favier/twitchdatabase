@@ -40,9 +40,6 @@ def channelselect(debug=0):
 
     window.mainloop()
 
-    def getpseudo():
-        print("here")
-        print(pseudo)
     return pseudo
 
 channelselect(1)
