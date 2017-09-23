@@ -2,7 +2,7 @@ from tkinter import *
 
 def channelselect(debug=0):
 
-    pseudo = "lol"
+    pseudo = "unnasigned"
 
     # get name function
     def getname():
@@ -10,12 +10,12 @@ def channelselect(debug=0):
         pseudo = name.get()
         window.destroy()
 
+
     window = Tk()
     # window title
     window.wm_title("Twitch database - pseudo")
 
     # variables
-    pseudo = ""
     name = StringVar()
 
     # define labels and buttons
