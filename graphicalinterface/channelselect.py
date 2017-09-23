@@ -1,7 +1,6 @@
-from tkinter import *
+def channelselect(debug=0):
 
-def channelselection(debug=0):
-
+    import tkinter
 
     # get name function
     def getname():
@@ -43,5 +42,3 @@ def channelselection(debug=0):
         print(pseudo)
 
     return pseudo
-
-channelselection(debug=1)

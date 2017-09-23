@@ -1,18 +1,26 @@
+import graphicalinterface.channelselect
+from tkinter import *
+
 first_run = 0
 debug = 1
 
-    # check if that is the first run
-    try:
-        config = open("graphical-interface/config/first-run-graph.conf", "r")
+# check if that is the first run
+try:
+    config = open("graphicalinterface/config/first-run-graph.conf", "r")
 
-    except FileNotFoundError:
+except FileNotFoundError:
 
-        if debug == 1:
-             print("first run!")
+    if debug == 1:
+        print("first run!")
+    config = open("graphicalinterface/config/first-run-graph.conf", "w")
+    config.write("first-run = true")
+    first_run = 1
 
-        config = open("graphical-interface/config/first-run-graph.conf", "w")
-        config.write("first-run = true")
-        first_run = 1
+finally:
+    # Get the new user channel name
+    pseudo = graphicalinterface.channelselect(debug)
+    print(pseudo)
+
 
 
 
