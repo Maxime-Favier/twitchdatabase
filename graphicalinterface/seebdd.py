@@ -42,7 +42,22 @@ finally:
     conn.commit()
     output_sql = list(cur)
 
-    print(output_sql)
+    #print(output_sql)
 
     print("done")
 
+    get_profile = output_sql[0]
+    print(get_profile)
+
+    #name = get_profile[1]
+
+    root = Tk()
+    t = Text(root)
+
+    for i,elt in enumerate(output_sql):
+        print(elt[1])
+
+
+        t.insert(END,elt[1] + '\n')
+    t.pack()
+    root.mainloop()
