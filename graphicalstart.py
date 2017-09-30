@@ -1,5 +1,5 @@
 import graphicalinterface.channelselect
-from tkinter import *
+
 
 first_run = 0
 debug = 1
@@ -17,10 +17,16 @@ except FileNotFoundError:
     first_run = 1
 
 finally:
-    # Get the new user channel name
-    pseudo = graphicalinterface.channelselect.channelselect(1)
-    print("done")
-    print(pseudo)
+
+    if first_run == 1:
+
+        # Get the new user channel name
+         pseudo = graphicalinterface.channelselect.channelselect(1)
+         print("done")
+         print(pseudo)
+
+    
+
 
 
 
