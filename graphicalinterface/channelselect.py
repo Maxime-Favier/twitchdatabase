@@ -1,15 +1,18 @@
 from tkinter import *
 
+pseudo = "unasigned"
+
 def channelselect(debug=0):
 
-    pseudo = "unnasigned"
+    global pseudo
 
-    # get name function
     def getname():
         global pseudo
         pseudo = name.get()
+        # print(pseudo)
         window.destroy()
 
+    # get name function
 
     window = Tk()
     # window title
@@ -39,8 +42,4 @@ def channelselect(debug=0):
     line_break_3.grid(row=6)
 
     window.mainloop()
-    print(pseudo)
     return pseudo
-
-lol = channelselect(1)
-print(lol)
